@@ -55,7 +55,7 @@
     "type": "console.navigation/href",
     "properties": {
       "id": "istioconfig",
-      "name": "IstioConfig",
+      "name": "Istio Config",
       "href": "/istioconfig",
       "perspective": "admin",
       "section": "servicemesh"
@@ -70,7 +70,8 @@
         "kind": "Project"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   },
   {
@@ -82,7 +83,8 @@
         "kind": "Pod"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   },
   {
@@ -93,7 +95,8 @@
         "kind": "Deployment"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   },
   {
@@ -104,7 +107,8 @@
         "kind": "DeploymentConfig"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   },
   {
@@ -115,7 +119,8 @@
         "kind": "StatefulSet"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   },
   {
@@ -127,7 +132,21 @@
         "kind": "Service"
       },
       "component": { "$codeRef": "MeshTab" },
-      "name": "Service Mesh"
+      "name": "Service Mesh",
+      "href": "servicemesh"
+    }
+  },
+  {
+    "type": "console.page/resource/tab",
+    "properties": {
+      "model": {
+        "version": "v1beta",
+        "group": "networking.istio.io",
+        "kind": "VirtualService"
+      },
+      "component": { "$codeRef": "MeshTab" },
+      "name": "Service Mesh",
+      "href": "servicemesh"
     }
   }
 ]
